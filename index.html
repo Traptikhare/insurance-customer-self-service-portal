@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Self-Service Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Insurance Customer Self-Service Portal</h1>
+        </header>
+
+        <!-- File a Claim Section -->
+        <section id="file-claim-section">
+            <h2>File a Claim</h2>
+            <form id="claim-form">
+                <label for="policy-number">Policy Number:</label>
+                <input type="text" id="policy-number" name="policy-number" required><br><br>
+                <label for="claim-description">Claim Description:</label>
+                <textarea id="claim-description" name="claim-description" required></textarea><br><br>
+                <button type="submit">Submit Claim</button>
+            </form>
+        </section>
+
+        <!-- Track Claim Section -->
+        <section id="track-claim-section">
+            <h2>Track Your Claim</h2>
+            <form id="track-claim-form">
+                <label for="claim-id">Claim ID:</label>
+                <input type="text" id="claim-id" name="claim-id" required><br><br>
+                <button type="submit">Track Claim</button>
+            </form>
+            <div id="claim-status"></div> <!-- Claim status will be displayed here -->
+        </section>
+
+        <!-- Chatbot Section -->
+        <section id="chatbot-section">
+            <h2>Chat with Us</h2>
+            <div id="chat-window">
+                <div id="chat-log"></div> <!-- Chat log will be updated dynamically -->
+                <input type="text" id="user-input" placeholder="Type your message..." />
+                <button id="send-message">Send</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
